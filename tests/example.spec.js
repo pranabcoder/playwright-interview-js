@@ -9,6 +9,6 @@ test('Login to the system', async ({ page }) => {
     await loginPageObject.loginUser('Admin', 'admin123');
     await page.waitForTimeout(10000);
     await page.locator('a').filter({ hasText: 'Leave' }).click();
-    await page.waitForTimeout(10000);
+    await page.waitForTimeout(20000);
     await page.close();
 });
