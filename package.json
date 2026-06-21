@@ -1,15 +1,21 @@
 {
-  "name": "playwright-demo",
+  "name": "interview_preparation_playwright_js",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.1",
-    "allure-playwright": "^3.9.0"
+    "@types/node": "^25.8.0",
+    "allure-commandline": "^2.41.0",
+    "allure-playwright": "^3.8.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "xlsx": "^0.18.5"
   }
 }
