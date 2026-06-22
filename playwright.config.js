@@ -9,13 +9,12 @@ export default defineConfig({
     /* Retry on CI only */
     retries: process.env.CI ? 2 : 0,
     /* Opt out of parallel tests on CI. */
-    workers: 1,
+    // workers: 1,
     reporter: 'allure-playwright',
     use: {
         trace: 'on-first-retry',
         screenshot: 'on',
         video: "on",
-        
     },
 
     /* Configure projects for major browsers */
@@ -51,7 +50,7 @@ export default defineConfig({
         {
             name: 'Google Chrome',
             use: {
-                ...devices['Desktop Chrome'], channel: 'chrome'
+                ...devices['Desktop Chrome'], channel: 'chrome', headless: false
             },
         },
     ],
